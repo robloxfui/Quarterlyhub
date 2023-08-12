@@ -2264,7 +2264,7 @@ do
             Library:AddToolTip(Info.Tooltip, DropdownOuter)
         end
 
-        local MAX_DROPDOWN_ITEMS = 8;
+        local MAX_DROPDOWN_ITEMS = 99;
 
         local ListOuter = Library:Create('Frame', {
             BackgroundColor3 = Color3.new(0, 0, 0);
@@ -2279,7 +2279,7 @@ do
         end;
 
         local function RecalculateListSize(YSize)
-            ListOuter.Size = UDim2.new(0, 234, 0, 161)
+            ListOuter.Size = UDim2.fromOffset(DropdownOuter.AbsoluteSize.X, YSize or (MAX_DROPDOWN_ITEMS))
         end;
 
         RecalculateListPosition();
