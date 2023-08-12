@@ -18,6 +18,9 @@ ScreenGui.Name = "LuxuriosHubsUiLibrary";
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global;
 ScreenGui.Parent = CoreGui;
 
+local ImageButton = Instance.new("ImageButton")
+local UICorner = Instance.new("UICorner")
+
 ImageButton.Parent = ScreenGui
 ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
