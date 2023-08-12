@@ -18,24 +18,6 @@ ScreenGui.Name = "LuxuriosHubsUiLibrary";
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global;
 ScreenGui.Parent = CoreGui;
 
-local ImageButton = Instance.new("ImageButton")
-local UICorner = Instance.new("UICorner")
-
-ImageButton.Parent = ScreenGui
-ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImageButton.BorderSizePixel = 0
-ImageButton.Position = UDim2.new(0.1801119, 0, 0.221925139, 0)
-ImageButton.Size = UDim2.new(0, 55, 0, 53)
-ImageButton.Image = "rbxassetid://14284996066"
-
-UICorner.Parent = ImageButton
-
-ImageButton.MouseButton1Click:Connect(function()
-    game:GetService("VirtualInputManager"):SendKeyEvent(true,"RightControl",false,game.Players.LocalPlayer.Character.HumanoidRootPart)
-	game:GetService("VirtualInputManager"):SendKeyEvent(false,"RightControl",false,game.Players.LocalPlayer.Character.HumanoidRootPart)
-end)
-
 local Toggles = {};
 local Options = {};
 
